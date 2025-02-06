@@ -741,7 +741,7 @@ h3.my-profession {
     color: var(--skin-color)
 }
 
-.contact .contact-info-item h4 {
+.contact .contact-info-item h2 {
     font-size: 18px;
     font-weight: 700;
     color: var(--text-black-900);
