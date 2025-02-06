@@ -597,6 +597,9 @@ h3.my-profession {
     text-transform: capitalize;
     color: var(--text-black-900);
 }
+.about .about-content .timeline .timeline-text{
+    color: var(--text-black-700);
+}
 
 
 /* services section  */
