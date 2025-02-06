@@ -9,6 +9,42 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="/css/skins/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="/css/skins/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="/css/skins/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="/css/skins/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="/css/skins/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
+    <link rel="stylesheet" href="css/style-switcher.css" />
 
     <title>Document</title>
   </head>
@@ -25,22 +61,22 @@
         </div>
         <div class="nav-toggler" id="nav-toggler">
           <span></span>
-      </div>
+        </div>
         <ul class="nav">
           <li>
-            <a href="" class="active"><i class="fa fa-home"></i>Home</a>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href=""><i class="fa fa-user"></i>About</a>
+            <a href="#about"><i class="fa fa-user"></i>About</a>
           </li>
           <li>
-            <a href=""><i class="fa fa-list"></i>Services</a>
+            <a href="#services"><i class="fa fa-list"></i>Services</a>
           </li>
           <li>
-            <a href=""><i class="fa fa-briefcase"></i>Portfolio</a>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
           </li>
           <li>
-            <a href=""><i class="fa fa-comments"></i>Contact</a>
+            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
           </li>
         </ul>
       </div>
@@ -49,7 +85,7 @@
       <!-- main content start  -->
       <div class="main-content">
         <!-- home section  -->
-        <section class="home section ">
+        <section class="home section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -57,8 +93,9 @@
                   Hello, my name is <span class="name">Adeel Farooq</span>
                 </h3>
                 <h3 class="my-profession">
-                  I'm a <span class="typing">Web Developer </span>
+                  I'm a <span class="typing"></span>
                 </h3>
+
                 <p>
                   I'm a web developer with over a year of experience
                   specializing in creating beautiful websites and optimizing
@@ -76,7 +113,7 @@
         <!-- home end  -->
 
         <!-- About Us Section Start  -->
-        <section class="about section ">
+        <section class="about section" id="about">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -251,7 +288,7 @@
         <!-- About Us Section End  -->
         <!-- Services  Section Start  -->
 
-        <section class="service section ">
+        <section class="service section" id="services">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -263,72 +300,68 @@
               <div class="service-item padd-15">
                 <div class="service-item-inner">
                   <div class="icon">
-                    <i class="fa fa-mobile-alt"></i>
-                  </div>
-                  <h4>Website Development</h4>
-                  <p>
-                    I provide professional website development services to
-                    create dynamic and responsive websites.
-                  </p>
-                </div>
-              </div>
-              <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon">
-                    <i class="fa fa-laptop-code"></i>
-                  </div>
-                  <h4>Website Development</h4>
-                  <p>
-                    I provide professional website development services to
-                    create dynamic and responsive websites.
-                  </p>
-                </div>
-              </div>
-              <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon">
                     <i class="fa fa-code"></i>
                   </div>
-                  <h4>Website Development</h4>
+                  <h4>Web Application Development</h4>
                   <p>
-                    I provide professional website development services to
-                    create dynamic and responsive websites.
+                    End-to-end development of responsive and scalable web applications using modern frameworks like React, Angular for the frontend and Node.js, Flask for the backend.
                   </p>
                 </div>
               </div>
               <div class="service-item padd-15">
                 <div class="service-item-inner">
                   <div class="icon">
-                    <i class="fa fa-bullhorn"></i>
+                    <i class="fas fa fa-shopping-cart"></i>
                   </div>
-                  <h4>Website Development</h4>
+                  <h4>E-commerce Development</h4>
                   <p>
-                    I provide professional website development services to
-                    create dynamic and responsive websites.
+                    Design and build fully functional e-commerce platforms that include payment processing, shopping carts, and user accounts to enhance online shopping experiences.
+
                   </p>
                 </div>
               </div>
               <div class="service-item padd-15">
                 <div class="service-item-inner">
                   <div class="icon">
-                    <i class="fa fa-bullhorn"></i>
+                    <i class="fas fa fa-plug"></i>
                   </div>
-                  <h4>Website Development</h4>
+                  <h4>API Development and Integration</h4>
                   <p>
-                    I provide professional website development services to
-                    create dynamic and responsive websites.
+                    Design and implement robust RESTful APIs and seamlessly integrate third-party APIs to enhance application functionality and streamline data exchange effectively.
                   </p>
                 </div>
               </div>
               <div class="service-item padd-15">
                 <div class="service-item-inner">
                   <div class="icon">
-                    <i class="fa fa-bullhorn"></i>
+                    <i class="fas fa fa-lightbulb"></i>
                   </div>
-                  <h4>Website Development</h4>
+                  <h4>AI Model Implementation</h4>
                   <p>
-                    I provide professional website development services to
-                    create dynamic and responsive websites.
+                    Integrate AI and machine learning models into web applications to provide intelligent features, such as personalized recommendations or natural language processing capabilities.
+                  </p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fas  fa fa-mobile-alt"></i>
+                  </div>
+                  <h4>Responsive Web Design</h4>
+                  <p>
+                    Create responsive and mobile-friendly web designs that ensure optimal viewing across devices using HTML5, CSS3, and frameworks like Tailwind,Bootstrap for enhanced user experience.
+                  </p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fas fa fa-tachometer-alt"></i>
+                  </div>
+                  <h4>Website Performance Optimization
+                  </h4>
+                  <p>
+                    Analyze and improve website performance using techniques such as image optimization, code minification, and caching strategies to enhance load times and user experience.
                   </p>
                 </div>
               </div>
@@ -340,7 +373,7 @@
         <!-- Services Section End  -->
         <!-- Portfolio  Section Start  -->
 
-        <section class="portfolio section ">
+        <section class="portfolio section" id="portfolio">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -404,7 +437,7 @@
 
         <!-- Portfolio  Section End  -->
         <!-- Contact Us  Section Start  -->
-        <section class="contact section">
+        <section class="contact section" id="contact">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -485,13 +518,18 @@
                 <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
-                      <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                      <textarea
+                        name=""
+                        class="form-control"
+                        id=""
+                        placeholder="Message"
+                      ></textarea>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
-                   <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn">Send Message</button>
                   </div>
                 </div>
               </div>
@@ -505,24 +543,32 @@
 
     <!-- Main Container End -->
 
-    <script src="/js/script.js"></script>
-    <script>
-      // Toggle Aside Navigation
-      const navToggler = document.getElementById('nav-toggler');
-      const aside = document.querySelector('.aside');
-  
-      navToggler.addEventListener('click', () => {
-          aside.classList.toggle('open');
-          navToggler.classList.toggle('open');
-      });
-  
-      // Close Aside When Clicking Outside
-      document.addEventListener('click', (event) => {
-          if (!aside.contains(event.target) && !navToggler.contains(event.target)) {
-              aside.classList.remove('open');
-              navToggler.classList.remove('open');
-          }
-      });
-  </script>
+    <!-- Style Switch Start  -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas fa"></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+
+    <!-- Style Switch End  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
   </body>
 </html>
