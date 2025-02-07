@@ -160,6 +160,89 @@ ul {
 }
 
 /* aside  */
+/* Hamburger Icon Styles */
+.aside .nav-toggler {
+    display: none;
+    /* Hidden by default */
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 5px;
+    position: fixed;
+    background: var(--bg-black-100);
+    left: 30px;
+    top: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    /* Ensure it's above other elements */
+}
+
+.aside .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.aside .nav-toggler span::before {
+    top: -6px;
+}
+
+.aside .nav-toggler span::after {
+    top: 6px;
+}
+
+/* Toggler Open State */
+.aside .nav-toggler.open span {
+    background: transparent;
+}
+
+.aside .nav-toggler.open span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.aside .nav-toggler.open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* Aside Open State */
+.aside.open {
+    left: 0;
+}
+
+/* Show Toggler on Smaller Screens */
+@media (max-width: 991px) {
+    .aside .nav-toggler {
+        display: flex;
+    }
+
+    .aside {
+        left: -270px;
+        transition: all 0.3s ease;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+}
+
 .aside {
     width: 270px;
     background: var(--bg-black-100);
@@ -1015,85 +1098,21 @@ h3.my-profession {
     }
 }
 
-/* Hamburger Icon Styles */
-.aside .nav-toggler {
+@media (min-width: 992px) {
+  /* Adjust Aside Width and Positioning */
+  .aside {
+    width: 270px;
+    left: 0;
+  }
+
+  /* Adjust Main Content Positioning */
+  .main-content {
+    margin-left: 270px; /* Push main content to the right of the aside */
+    width: calc(100% - 270px); /* Ensure main content takes up remaining space */
+  }
+
+  /* Hide Nav Toggler on Larger Screens */
+  .aside .nav-toggler {
     display: none;
-    /* Hidden by default */
-    height: 40px;
-    width: 45px;
-    border: 1px solid var(--bg-black-50);
-    border-radius: 5px;
-    position: fixed;
-    background: var(--bg-black-100);
-    left: 30px;
-    top: 20px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    z-index: 11;
-    /* Ensure it's above other elements */
-}
-
-.aside .nav-toggler span {
-    height: 2px;
-    width: 18px;
-    background: var(--skin-color);
-    display: inline-block;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.aside .nav-toggler span::before,
-.aside .nav-toggler span::after {
-    content: '';
-    height: 2px;
-    width: 18px;
-    background: var(--skin-color);
-    position: absolute;
-    left: 0;
-    transition: all 0.3s ease;
-}
-
-.aside .nav-toggler span::before {
-    top: -6px;
-}
-
-.aside .nav-toggler span::after {
-    top: 6px;
-}
-
-/* Toggler Open State */
-.aside .nav-toggler.open span {
-    background: transparent;
-}
-
-.aside .nav-toggler.open span::before {
-    top: 0;
-    transform: rotate(45deg);
-}
-
-.aside .nav-toggler.open span::after {
-    top: 0;
-    transform: rotate(-45deg);
-}
-
-/* Aside Open State */
-.aside.open {
-    left: 0;
-}
-
-/* Show Toggler on Smaller Screens */
-@media (max-width: 991px) {
-    .aside .nav-toggler {
-        display: flex;
-    }
-
-    .aside {
-        left: -270px;
-        transition: all 0.3s ease;
-    }
-
-    .main-content {
-        padding-left: 0;
-    }
+  }
 }
